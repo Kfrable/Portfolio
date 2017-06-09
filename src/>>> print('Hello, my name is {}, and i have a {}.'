@@ -1,0 +1,5 @@
+def hi
+meaasage = 'hi'
+print(meaasage)
+end
+hi
