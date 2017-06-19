@@ -30,18 +30,18 @@ h1{
 
 }
 .mini {
-    height: 116px;
-    width: 219px;
+        height: 500px;
+    width: 500px;
     border: white solid 2px;
     display: table-cell;
     padding-left: 40px;
     background-color: black;
 }
-body{
+/*body{
   background-image: url('http://d5qsyj6vaeh11.cloudfront.net/images/homepage/featured-module-hp/ioi/ioi_waw_us.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-}
+}*/
 #footer{
   text-align: center;
   color:white;
@@ -51,4 +51,32 @@ body{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+p{
+  text-align: center;
+    font-size: 38px;
+    font-family: sans-serif;
+}
+
+#me{
+
+    border-radius: 100%;
+    height: 190px;
+    width: 347px;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+.list{
+  font-size: 40px;
+  /*display: inline;*/
+}
+
+
+.skill{
+  display: inline-block;
+}
+
+
 

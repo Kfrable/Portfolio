@@ -1,24 +1,43 @@
 import React from 'react'
+import {
+  Navbar,Header,Brand,Toggle,Collapse,Nav,NavItem,NavDropdown,MenuItem
+} from 'react-bootstrap';
 
-const styles={
-	border:'solid black',
-	background:'white'
+function Naver(){
+	return (
+      <div>
+        
 
-}
-const header={
-	
-}
-function Nav(){
-	return(
-		<div style={styles}>
-			<h1 style={header}>Kyle Frable</h1>
-				{/*<ul>
-					<li>about</li>
-					<li>contact</li>
-					<li>skills</li>
-				</ul>*/}
-		</div>
-	)
+          <Navbar inverse collapseOnSelect>
+    <Navbar.Header>
+      <Navbar.Brand>
+        <a href="/">Kyle Frable</a>
+      </Navbar.Brand>
+      <Navbar.Toggle />
+    </Navbar.Header>
+    <Navbar.Collapse>
+      <Nav>
+        <NavItem eventKey={1} href="/contact">Contact</NavItem>
+        {/*<NavItem eventKey={2} href="#">Link</NavItem>*/}
+        <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+          <MenuItem eventKey={3.1} href="/about">About</MenuItem>
+          <MenuItem eventKey={3.2} href="/projects">Projects</MenuItem>
+          <MenuItem eventKey={3.3} href="/skills">Skills</MenuItem>
+          
+          <MenuItem eventKey={3.3} href="/contact">Contact</MenuItem>
+          {/*<MenuItem eventKey={3.3} href="/">Home</MenuItem>*/}
+          
+        </NavDropdown>
+      </Nav>
+      <Nav pullRight>
+        
+      </Nav>
+    </Navbar.Collapse>
+  </Navbar>
+
+        
+      </div>
+    )
 }
 
-export default Nav
+export default Naver
